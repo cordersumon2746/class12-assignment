@@ -1,0 +1,307 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+    list-style-position:outside;
+}
+/* menu */
+.menu{
+    background: #000;
+}
+
+
+.menu ul{
+    text-align: center;
+}
+
+
+.menu ul li{
+    display: inline-block;
+    margin-left:30px;
+    position: relative;
+}
+
+
+.menu ul li a{
+    color: #fff;
+    padding: 15px 40px;
+    display:block;
+    font-size: 20px;
+    text-decoration: none;
+    
+    
+}
+
+
+
+
+.menu ul li ul.sub-menu{
+    position: absolute;
+    background: #000;
+    width: 200px;
+    top: 100%;
+   opacity: 0;
+   visibility: hidden;
+   transition: .7s;
+
+}
+
+
+
+.menu ul li ul.sub-menu li{
+    margin-left: -32px;
+    display: block;
+}
+
+.menu ul li ul.sub-menu li a{
+    display: block;
+    padding: 7px 40px;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.315);
+    
+}
+.menu ul li ul.sub-menu li a:hover{
+    background: #3971d7;
+}
+
+.sub-menu2{
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    background: #000;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+   transition: .7s;
+  
+}
+
+.menu ul li ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+.menu ul li:hover .sub-menu{
+    opacity: 1;
+    visibility: visible;
+   
+}
+
+.menu ul li ul li:hover >b{
+border-top: 1px solid #3971d7;
+}
+.b{
+    z-index: 99;
+}
+
+.menu ul li ul li:first-child{
+    border-top: 1px solid #3971d7;
+}
+
+
+/* .banner */
+.banner{
+    margin-top: -16px;
+    /* position: relative; */
+}
+
+.banner img{
+    width: 100%;
+}
+
+.slider{
+    
+        background: white;
+        position: absolute;
+        top: 347px;
+        left: 540px;
+        padding: 5px 12px;
+        font-family: arial black;
+}
+
+.slider h1{
+   display: inline-block;
+}
+
+.sub-title{
+    
+        text-align: center;
+        width: 80%;
+        background: white;
+        position: absolute;
+        top: 433px;
+        left: 129px;
+    
+}
+
+.more{
+    width: 135px;
+    background: red;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: 499px;
+    left: 591px;
+    color: #fff;
+    transition: .3s;
+    
+}
+.more:hover{
+    background: #fff;
+    color: #000;
+    font-family: arial black;
+    border: 2px solid red;
+   
+}
+
+
+/* service1 */
+
+.service1{
+    text-align: center;
+    background: #ffffff;
+   
+    box-sizing: border-box;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 52px;
+    margin-top: 20px;
+
+}
+
+.service1 ul{
+    list-style-position: outside;
+}
+
+.service h3{
+    
+   margin-top: 50px;
+}
+
+/* service2 */
+
+.service2{
+    text-align: center;
+    list-style-position: inside;
+    background: #ffffff;
+    margin-top: 20px;
+    box-shadow: 2px -2px 15px #ddd;
+    box-sizing: border-box;
+    padding: 52px 0px;
+    margin-left: 0px;
+}
+/* contact */
+.contact{
+    text-align: center;
+    width: 100%;
+    background: #ddd;
+    padding: 20px;
+    position: relative;
+    height: 133px;
+}
+
+
+.email{
+    width: 500px;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid red;
+   
+}
+
+.submit{
+    width: 150px;
+    background: red;
+    color: #fff;
+    padding: px;
+    margin-left: -5px;
+    border: none;
+    border-bottom: 1px solid red;
+    margin-top: 35px;
+    height: 39px;
+    transition: .5s;
+}
+
+.submit:hover{
+    background: #fff;
+    color: #000;
+    font-family: arial black;
+    border: 1px solid red;
+}
+
+.p{
+    position: absolute;
+    top: 10px;
+    left: 237px;
+}
+/* service3 */
+.service3
+.service3 h3{
+    text-align: center;
+    
+}
+
+.roman{
+    list-style-type:lower-roman;
+    display: inline-block;
+}
+
+.square{
+    list-style-type: square;
+    display: inline-block;
+}
+
+.a{
+    list-style-type:lower-greek;
+    display: inline-block;
+}
+/* footer */
+.footer{
+    width: 100%;
+    height: 146px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 13px;
+}
+
+.smenu ul li{
+    display: inline-block;
+}
+
+.smenu ul li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #5ea5fa;
+    font-size: 24px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 12px;
+    color: black;
+    position: relative;
+    transition: .5s;
+}
+
+.smenu a:hover{
+    background: yellow;
+}
+
+.smenu ul{
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.smenu ul li a i{
+position: absolute;
+top: 11px;
+left: 12px;
+    
+} 
